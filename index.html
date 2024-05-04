@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Booking App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Studio Booking</h1>
+    <form id="bookingForm">
+        <label for="user">Kas Bookina:</label>
+        <select id="user" required>
+            <option value="">Select</option>
+            <option value="Klise">Klise</option>
+            <option value="aktu">aktu</option>
+            <option value="Incidentas">Incidentas</option>
+            <option value="Matas">Matas</option>
+            <option value="Elena">Elena</option>
+            <option value="Papartis Bbz">Papartis Bbz</option>
+        </select>
+
+        <label for="start-time">Kada Pradedat:</label>
+        <input type="time" id="start-time" name="start-time" step="3600" value="00:00" required>
+
+        <label for="end-time">Kada Baigiat:</label>
+        <input type="time" id="end-time" name="end-time" required>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Rezervuoti</button>
+    </form>
+    <div id="calendar"></div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

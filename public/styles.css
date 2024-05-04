@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #27374D;
+}
+
+h1 {
+    text-align: center;
+    color: #DDE6ED;
+}
+
+form {
+    margin-bottom: 20px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #DDE6ED;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #6090b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgb(45, 120, 199);
+}
+
+#calendar {
+    grid-template-columns: repeat(7, 1fr);
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar th,
+#calendar td {
+    border: 1px solid #DDE6ED;
+    padding: 20px;
+    text-align: center;
+}
+
+#calendar th {
+    background-color: #27374D;
+    color: #DDE6ED;
+}
+
+#calendar td {
+    position: relative;
+    cursor: pointer;
+    color: #DDE6ED;
+    padding: 25px;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calendar ul li {
+    background-color: #6090b4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 5px;
+}
+
+select {
+    width: calc(100% - 16px);
+    padding: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%231C1C1C" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+select option {
+    padding: 6px;
+    font-size: 14px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option:hover {
+    background-color: #f2f2f2;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
